@@ -1,5 +1,5 @@
 import matplotlib.pyplot as plt
-import pandas as pd # importando pandas
+import pandas as pd
 import numpy as np
 import math
 import random

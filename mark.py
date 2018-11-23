@@ -20,7 +20,7 @@ def puntos_aleatorios(num):
       return lista
 
 #definimos la cantidad de activos del portafolio
-cant_activos=5
+cant_activos=12
 
 #extrayendo los activos del archivo csv
 def extraerDatos(cant_activos):
@@ -36,18 +36,18 @@ vector_de_precios=extraerDatos(cant_activos)
 #usamos como referencia el tamaño del primer activo ya que todos tienen el mismo
 activo_1=vector_de_precios[0]
 longitud=len(activo_1)
-empresas=['IBM','Coca-Cola','Oracle','Apple','Nike']
+empresas=['Caterpillar','QUALCOMM Incorporated','Starbucks Corporation',"Domino's Pizza",'LATAM Airlines Group S.A.','VMware','Oracle Corporation','Microsoft Corporation','Adobe','Sony Corporation','Toyota Motor Corporation','Canon']
 
 
-print("\nTomemos como ejemplo las siguientes empresas:\n\n1) IBM\n2) Coca-Cola\n3) Oracle\n4) Apple\n5) Nike\n")
+print("\nTomemos como ejemplo las siguientes empresas:\n\n1) Caterpillar\n2) QUALCOMM Incorporated\n3) Starbucks Corporation\n4) Domino's Pizza\n5) LATAM Airlines Group S.A.\n6) VMware\n7) Oracle Corporation\n8) Microsoft Corporation\n9) Adobe\n10) Sony Corporation\n11) Toyota Motor Corporation\n12) Canon\n")
 cant_invertir=int(input("¿En cuántas empresas deseas invertir?: "))
 print("\n¿En cuáles deseas invertir?\n")
 vector_elegidos=[0]*cant_invertir
 nombres=[0]*cant_invertir
-for i in range(cant_invertir):
-    num_empresa=int(input("Activo #"+str(i+1)+": "))
-    nombres[i]=empresas[num_empresa-1]
-    vector_elegidos[i]=vector_de_precios[num_empresa-1]
+for a in range(cant_invertir):
+    num_empresa=int(input("Activo #"+str(a+1)+": "))
+    nombres[a]=empresas[num_empresa-1]
+    vector_elegidos[a]=vector_de_precios[num_empresa-1]
 
 #calculamos los retornos de los activos
 def retornosActivos(longitud,vector_elegidos):

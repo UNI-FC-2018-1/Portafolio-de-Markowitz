@@ -99,7 +99,7 @@ input("\nPulse enter para continuar...")
 print("\n","\t"*cant_invertir,"RETORNOS DE LOS ACTIVOS\n\n",tabla_retornos*100)
 input("\nPulse enter para continuar...")
 
-print("\n","\t"*cant_invertir,"VARIABLES DE LOS ACTIVOS\n\n",tabla_info_activos)
+print("\n","\t"*cant_invertir,"MEDIDAS DE DISPERSIÓN DE LOS ACTIVOS\n\n",tabla_info_activos)
 print("\n","\t"*cant_invertir,"MATRIZ DE VARIANZA Y COVARIANZA (%)\n")
 print(matriz_de_var_covar*100)
 
